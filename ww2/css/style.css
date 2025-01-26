@@ -1,0 +1,131 @@
+/* รีเซ็ตค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* ตัวจัดการ Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 1rem;
+}
+
+body {
+    font-family: 'Anuphan', sans-serif;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.125rem;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #9b9484;
+}
+
+.menu {
+    display: flex; 
+    list-style: none; 
+}
+
+.menu li {
+    margin-left: 1rem; 
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #555;
+}
+
+/* สไตล์ของ Banner */
+.banner {
+    background-color: #9b9484;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.banner h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.banner-info p {
+    font-size: 1.25rem;
+    margin-top: 0.625rem; 
+}
+
+.banner-info img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* ส่วนของเนื้อหา */
+main div {
+    padding: 1.25rem;
+}
+
+main div p {
+    margin-top: 0.625rem;
+    line-height: 1.6;
+}
+
+main img {
+    width: 20%;
+    border-radius: 20px;
+}
+
+main img {
+    width: 20%;
+    border-radius: 20px;
+    display: block;
+    margin: 10px auto; /* จัดกึ่งกลางแนวนอน */
+/* Footer */
+}
+
+footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 1.25rem;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* การทำงาน Responsive */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 0.625rem 0;
+    }
+
+    .banner {
+        height: auto;
+        padding: 1.25rem;
+    }
+
+    .banner-info img {
+        width: 80%;
+    }
+}
